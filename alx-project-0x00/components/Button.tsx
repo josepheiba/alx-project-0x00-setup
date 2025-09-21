@@ -2,9 +2,9 @@ import { ButtonProps } from "@/interfaces";
 
 const Button: React.FC<ButtonProps> = ({ 
   title, 
+  styles,
   size = 'medium', 
-  shape = 'rounded-md', 
-  className = '' 
+  shape = 'rounded-md'
 }) => {
   const getSizeClasses = (size: string) => {
     switch (size) {
@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   const baseClasses = 'font-medium bg-blue-500 text-white hover:bg-blue-600 transition-colors cursor-pointer border-none outline-none'
   const sizeClasses = getSizeClasses(size)
   const shapeClasses = shape
-  const allClasses = `${baseClasses} ${sizeClasses} ${shapeClasses} ${className}`.trim()
+  const allClasses = `${baseClasses} ${sizeClasses} ${shapeClasses} ${styles}`.trim()
 
   return (
     <button className={allClasses}>
