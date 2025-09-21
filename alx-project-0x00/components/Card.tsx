@@ -6,8 +6,8 @@ import Pill from "./Pill"
 const Card: React.FC = () => {
 
  return (
-    <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
-      <div className="rounded-lg bg-gray-200 flex items-center justify-center" style={{width: '378.56px', height: '299.37px'}}>
+    <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-md ">
+      <div className="rounded-md bg-gray-200 flex items-center justify-center" style={{width: '378.56px', height: '299.37px'}}>
         <p className="text-gray-500 text-sm">House Image Placeholder</p>
       </div>
       <div className="p-2 flex gap-2 mt-2">
